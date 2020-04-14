@@ -5,18 +5,18 @@ import 'package:flutter_cart/catalog_page.dart';
 
 void main() => runApp(MyApp());
 
+final cartBloc = CartBloc();
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-        create: (context) => CartBloc(),
-        child: MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            primarySwatch: Colors.teal,
-          ),
-          home: LoginScreen(),
-        ));
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
+      home: LoginScreen(),
+    );
   }
 }
 
